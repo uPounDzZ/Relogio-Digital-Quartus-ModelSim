@@ -1,0 +1,276 @@
+|Relogio
+reset => reset.IN4
+clock => clock.IN4
+s_lsd[0] <= decoder_7seg:seg_unid.segmentos
+s_lsd[1] <= decoder_7seg:seg_unid.segmentos
+s_lsd[2] <= decoder_7seg:seg_unid.segmentos
+s_lsd[3] <= decoder_7seg:seg_unid.segmentos
+s_lsd[4] <= decoder_7seg:seg_unid.segmentos
+s_lsd[5] <= decoder_7seg:seg_unid.segmentos
+s_lsd[6] <= decoder_7seg:seg_unid.segmentos
+s_msd[0] <= decoder_7seg:seg_dez.segmentos
+s_msd[1] <= decoder_7seg:seg_dez.segmentos
+s_msd[2] <= decoder_7seg:seg_dez.segmentos
+s_msd[3] <= decoder_7seg:seg_dez.segmentos
+s_msd[4] <= decoder_7seg:seg_dez.segmentos
+s_msd[5] <= decoder_7seg:seg_dez.segmentos
+s_msd[6] <= decoder_7seg:seg_dez.segmentos
+m_lsd[0] <= decoder_7seg:min_unid.segmentos
+m_lsd[1] <= decoder_7seg:min_unid.segmentos
+m_lsd[2] <= decoder_7seg:min_unid.segmentos
+m_lsd[3] <= decoder_7seg:min_unid.segmentos
+m_lsd[4] <= decoder_7seg:min_unid.segmentos
+m_lsd[5] <= decoder_7seg:min_unid.segmentos
+m_lsd[6] <= decoder_7seg:min_unid.segmentos
+m_msd[0] <= decoder_7seg:min_dez.segmentos
+m_msd[1] <= decoder_7seg:min_dez.segmentos
+m_msd[2] <= decoder_7seg:min_dez.segmentos
+m_msd[3] <= decoder_7seg:min_dez.segmentos
+m_msd[4] <= decoder_7seg:min_dez.segmentos
+m_msd[5] <= decoder_7seg:min_dez.segmentos
+m_msd[6] <= decoder_7seg:min_dez.segmentos
+h_lsd[0] <= decoder_7seg:hora_unid.segmentos
+h_lsd[1] <= decoder_7seg:hora_unid.segmentos
+h_lsd[2] <= decoder_7seg:hora_unid.segmentos
+h_lsd[3] <= decoder_7seg:hora_unid.segmentos
+h_lsd[4] <= decoder_7seg:hora_unid.segmentos
+h_lsd[5] <= decoder_7seg:hora_unid.segmentos
+h_lsd[6] <= decoder_7seg:hora_unid.segmentos
+h_msd[0] <= decoder_7seg:hora_dez.segmentos
+h_msd[1] <= decoder_7seg:hora_dez.segmentos
+h_msd[2] <= decoder_7seg:hora_dez.segmentos
+h_msd[3] <= decoder_7seg:hora_dez.segmentos
+h_msd[4] <= decoder_7seg:hora_dez.segmentos
+h_msd[5] <= decoder_7seg:hora_dez.segmentos
+h_msd[6] <= decoder_7seg:hora_dez.segmentos
+
+
+|Relogio|divisor_clock:div_clock
+clk_in => clk_out~reg0.CLK
+clk_in => contador[0].CLK
+clk_in => contador[1].CLK
+clk_in => contador[2].CLK
+clk_in => contador[3].CLK
+clk_in => contador[4].CLK
+clk_in => contador[5].CLK
+clk_in => contador[6].CLK
+clk_in => contador[7].CLK
+clk_in => contador[8].CLK
+clk_in => contador[9].CLK
+clk_in => contador[10].CLK
+clk_in => contador[11].CLK
+clk_in => contador[12].CLK
+clk_in => contador[13].CLK
+clk_in => contador[14].CLK
+clk_in => contador[15].CLK
+clk_in => contador[16].CLK
+clk_in => contador[17].CLK
+clk_in => contador[18].CLK
+clk_in => contador[19].CLK
+clk_in => contador[20].CLK
+clk_in => contador[21].CLK
+clk_in => contador[22].CLK
+clk_in => contador[23].CLK
+clk_in => contador[24].CLK
+clk_in => contador[25].CLK
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => contador.OUTPUTSELECT
+rst => clk_out.OUTPUTSELECT
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|contador_segundos:segundos
+clk => carry~reg0.CLK
+clk => dezena[0]~reg0.CLK
+clk => dezena[1]~reg0.CLK
+clk => dezena[2]~reg0.CLK
+clk => unidade[0]~reg0.CLK
+clk => unidade[1]~reg0.CLK
+clk => unidade[2]~reg0.CLK
+clk => unidade[3]~reg0.CLK
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => carry.OUTPUTSELECT
+enable => unidade.OUTPUTSELECT
+enable => unidade.OUTPUTSELECT
+enable => unidade.OUTPUTSELECT
+enable => unidade.OUTPUTSELECT
+enable => dezena.OUTPUTSELECT
+enable => dezena.OUTPUTSELECT
+enable => dezena.OUTPUTSELECT
+enable => carry.OUTPUTSELECT
+unidade[0] <= unidade[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= unidade[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= unidade[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= unidade[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[0] <= dezena[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= dezena[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= dezena[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|decoder_7seg:seg_unid
+valor[0] => Decoder0.IN3
+valor[1] => Decoder0.IN2
+valor[2] => Decoder0.IN1
+valor[3] => Decoder0.IN0
+segmentos[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|decoder_7seg:seg_dez
+valor[0] => Decoder0.IN3
+valor[1] => Decoder0.IN2
+valor[2] => Decoder0.IN1
+valor[3] => Decoder0.IN0
+segmentos[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|contador_minutos:minutos
+clk => carry_out~reg0.CLK
+clk => dezena[0]~reg0.CLK
+clk => dezena[1]~reg0.CLK
+clk => dezena[2]~reg0.CLK
+clk => unidade[0]~reg0.CLK
+clk => unidade[1]~reg0.CLK
+clk => unidade[2]~reg0.CLK
+clk => unidade[3]~reg0.CLK
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => carry_out.OUTPUTSELECT
+enable => always0.IN0
+carry_in => always0.IN1
+unidade[0] <= unidade[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= unidade[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= unidade[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= unidade[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[0] <= dezena[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= dezena[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[2] <= dezena[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+carry_out <= carry_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|decoder_7seg:min_unid
+valor[0] => Decoder0.IN3
+valor[1] => Decoder0.IN2
+valor[2] => Decoder0.IN1
+valor[3] => Decoder0.IN0
+segmentos[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|decoder_7seg:min_dez
+valor[0] => Decoder0.IN3
+valor[1] => Decoder0.IN2
+valor[2] => Decoder0.IN1
+valor[3] => Decoder0.IN0
+segmentos[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|contador_horas:horas
+clk => dezena[0]~reg0.CLK
+clk => dezena[1]~reg0.CLK
+clk => unidade[0]~reg0.CLK
+clk => unidade[1]~reg0.CLK
+clk => unidade[2]~reg0.CLK
+clk => unidade[3]~reg0.CLK
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => unidade.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+rst => dezena.OUTPUTSELECT
+enable => always0.IN0
+carry_in => always0.IN1
+unidade[0] <= unidade[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= unidade[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= unidade[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= unidade[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[0] <= dezena[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dezena[1] <= dezena[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|decoder_7seg:hora_unid
+valor[0] => Decoder0.IN3
+valor[1] => Decoder0.IN2
+valor[2] => Decoder0.IN1
+valor[3] => Decoder0.IN0
+segmentos[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Relogio|decoder_7seg:hora_dez
+valor[0] => Decoder0.IN3
+valor[1] => Decoder0.IN2
+valor[2] => Decoder0.IN1
+valor[3] => Decoder0.IN0
+segmentos[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segmentos[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
