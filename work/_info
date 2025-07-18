@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\Projetos\Relogio
+vcontador_horas
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+!i10b 1
+Z2 !s100 n=<b`GMamM[`dZOB`@KHO1
+IgCL]QX3DX4N64nk0:<SzW3
+Z3 VY0J=9XZ_PB;mV[EzFlLa>2
+Z4 !s105 contador_horas_sv_unit
+S1
+Z5 dC:\altera\Projetos\Relogio
+Z6 w1742941876
+Z7 8contador_horas.sv
+Z8 Fcontador_horas.sv
+L0 1
+Z9 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z10 !s108 1744195312.765000
+Z11 !s107 Relogio_tb.sv|decoder_7seg.sv|contador_horas.sv|contador_minutos.sv|contador_segundos.sv|divisor_clock.sv|Relogio.sv|
+Z12 !s90 -reportprogress|300|-work|work|Relogio.sv|divisor_clock.sv|contador_segundos.sv|contador_minutos.sv|contador_horas.sv|decoder_7seg.sv|Relogio_tb.sv|
+!s101 -O0
+Z13 o-work work -O0
+vcontador_minutos
+R1
+!i10b 1
+Z14 !s100 A3dO_[T?F[WF^1iG=Ul=D1
+IT^k]XSUK:o0@7ol`VI_BN1
+Z15 V?ZA<1A_4ImETi1eCS3hUh3
+Z16 !s105 contador_minutos_sv_unit
+S1
+R5
+Z17 w1742941862
+Z18 8contador_minutos.sv
+Z19 Fcontador_minutos.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vcontador_segundos
+R1
+!i10b 1
+Z20 !s100 `<dA2860b;7FkPkihIfMj1
+IhYT8zcn:>:zU?91^H=b8R0
+Z21 V>cA<B7A[Nl2ZG>PiMUm=M1
+Z22 !s105 contador_segundos_sv_unit
+S1
+R5
+Z23 w1742941843
+Z24 8contador_segundos.sv
+Z25 Fcontador_segundos.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vdecoder_7seg
+R1
+!i10b 1
+Z26 !s100 m23ZFe:1ULDmZ>Dad:Z2K3
+I=Ho6WIi;eca3zGQ98Ka772
+Z27 V3;_5R6aP2A@TaRmMm=AKk2
+Z28 !s105 decoder_7seg_sv_unit
+S1
+R5
+Z29 w1742941892
+Z30 8decoder_7seg.sv
+Z31 Fdecoder_7seg.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vdivisor_clock
+R1
+!i10b 1
+Z32 !s100 b7]]8n5cg:7o`kG^cN0<]3
+ICGF_7H9_IAi2H0Azg_IMo1
+Z33 VkOl5>Od?_5HKMOVY=o0ge2
+Z34 !s105 divisor_clock_sv_unit
+S1
+R5
+Z35 w1742941826
+Z36 8divisor_clock.sv
+Z37 Fdivisor_clock.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+vRelogio
+R1
+!i10b 1
+!s100 [hDUB>Fh0l1nX7DGFEk]o3
+IOD9bzRL9GAlHagdBn9daS3
+Z38 V[LT9=d>Zg?GgH3>VlFll[1
+!s105 Relogio_sv_unit
+S1
+R5
+Z39 w1742941809
+8Relogio.sv
+FRelogio.sv
+L0 1
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z40 n@relogio
+vRelogio_tb
+R1
+!i10b 1
+!s100 >OG8dMjDV69[L>;`9MWdW0
+IOiP:n?@k@b;H5>9eADMfD3
+Z41 Vl4cF]0>PFcLgcA?EVchXA1
+!s105 Relogio_tb_sv_unit
+S1
+R5
+Z42 w1742942284
+8Relogio_tb.sv
+FRelogio_tb.sv
+L0 3
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!s101 -O0
+R13
+Z43 n@relogio_tb

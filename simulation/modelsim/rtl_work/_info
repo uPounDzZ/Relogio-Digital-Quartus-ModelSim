@@ -1,0 +1,144 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\Projetos\Relogio\simulation\modelsim
+vcontador_horas
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I5kiP]d<SL^COK9b@e3_`91
+VY0J=9XZ_PB;mV[EzFlLa>2
+S1
+Z2 dC:\altera\Projetos\Relogio\simulation\modelsim
+w1742941876
+8C:/altera/Projetos/Relogio/contador_horas.sv
+FC:/altera/Projetos/Relogio/contador_horas.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work +incdir+C:/altera/Projetos/Relogio -O0
+!i10b 1
+!s100 VA=YFlJ=A=28T@P?H_c=o2
+!s105 contador_horas_sv_unit
+!s85 0
+!s108 1744195278.808000
+!s107 C:/altera/Projetos/Relogio/contador_horas.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/altera/Projetos/Relogio|C:/altera/Projetos/Relogio/contador_horas.sv|
+!s101 -O0
+vcontador_minutos
+R1
+IMXPh^57A?Y]A1keYYP3zR1
+V?ZA<1A_4ImETi1eCS3hUh3
+S1
+R2
+w1742941862
+8C:/altera/Projetos/Relogio/contador_minutos.sv
+FC:/altera/Projetos/Relogio/contador_minutos.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ckb6ikJ3:=lQmAmR0hEC=1
+!s105 contador_minutos_sv_unit
+!s85 0
+!s108 1744195278.759000
+!s107 C:/altera/Projetos/Relogio/contador_minutos.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/altera/Projetos/Relogio|C:/altera/Projetos/Relogio/contador_minutos.sv|
+!s101 -O0
+vcontador_segundos
+R1
+I<TbOoe9@`HkM<G@gjRd4F2
+V>cA<B7A[Nl2ZG>PiMUm=M1
+S1
+R2
+w1742941843
+8C:/altera/Projetos/Relogio/contador_segundos.sv
+FC:/altera/Projetos/Relogio/contador_segundos.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 ]CF?oeXNG`gE>X=nkS5<W3
+!s105 contador_segundos_sv_unit
+!s85 0
+!s108 1744195278.680000
+!s107 C:/altera/Projetos/Relogio/contador_segundos.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/altera/Projetos/Relogio|C:/altera/Projetos/Relogio/contador_segundos.sv|
+!s101 -O0
+vdecoder_7seg
+R1
+!i10b 1
+!s100 SPh@5D@m^9<14dDD;]6>^2
+I4J7Wl;]YiXOX]TPF?D`Q81
+V3;_5R6aP2A@TaRmMm=AKk2
+!s105 decoder_7seg_sv_unit
+S1
+R2
+w1742941892
+8C:/altera/Projetos/Relogio/decoder_7seg.sv
+FC:/altera/Projetos/Relogio/decoder_7seg.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1744195278.858000
+!s107 C:/altera/Projetos/Relogio/decoder_7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/altera/Projetos/Relogio|C:/altera/Projetos/Relogio/decoder_7seg.sv|
+!s101 -O0
+R4
+R5
+vdivisor_clock
+R1
+I>RCiZX<1@<54_m@GnXSF42
+VkOl5>Od?_5HKMOVY=o0ge2
+S1
+R2
+w1742941826
+8C:/altera/Projetos/Relogio/divisor_clock.sv
+FC:/altera/Projetos/Relogio/divisor_clock.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 LlR_ef_RU9k6FVA7I:0XZ1
+!s105 divisor_clock_sv_unit
+!s85 0
+!s108 1744195278.629000
+!s107 C:/altera/Projetos/Relogio/divisor_clock.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/altera/Projetos/Relogio|C:/altera/Projetos/Relogio/divisor_clock.sv|
+!s101 -O0
+vRelogio
+R1
+IKV6fVE722HBZXi@SHe;cR2
+V[LT9=d>Zg?GgH3>VlFll[1
+S1
+R2
+w1742941809
+8C:/altera/Projetos/Relogio/Relogio.sv
+FC:/altera/Projetos/Relogio/Relogio.sv
+L0 1
+R3
+r1
+31
+R4
+n@relogio
+R5
+!i10b 1
+!s100 MEbXgckK9HcgFI=ch71H;3
+!s105 Relogio_sv_unit
+!s85 0
+!s108 1744195278.577000
+!s107 C:/altera/Projetos/Relogio/Relogio.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/altera/Projetos/Relogio|C:/altera/Projetos/Relogio/Relogio.sv|
+!s101 -O0

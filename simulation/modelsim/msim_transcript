@@ -1,0 +1,92 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Relogio_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/altera/Projetos/Relogio {C:/altera/Projetos/Relogio/Relogio.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Relogio
+# 
+# Top level modules:
+# 	Relogio
+# vlog -sv -work work +incdir+C:/altera/Projetos/Relogio {C:/altera/Projetos/Relogio/divisor_clock.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module divisor_clock
+# 
+# Top level modules:
+# 	divisor_clock
+# vlog -sv -work work +incdir+C:/altera/Projetos/Relogio {C:/altera/Projetos/Relogio/contador_segundos.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module contador_segundos
+# 
+# Top level modules:
+# 	contador_segundos
+# vlog -sv -work work +incdir+C:/altera/Projetos/Relogio {C:/altera/Projetos/Relogio/contador_minutos.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module contador_minutos
+# 
+# Top level modules:
+# 	contador_minutos
+# vlog -sv -work work +incdir+C:/altera/Projetos/Relogio {C:/altera/Projetos/Relogio/contador_horas.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module contador_horas
+# 
+# Top level modules:
+# 	contador_horas
+# vlog -sv -work work +incdir+C:/altera/Projetos/Relogio {C:/altera/Projetos/Relogio/decoder_7seg.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decoder_7seg
+# 
+# Top level modules:
+# 	decoder_7seg
+# 
+cd "C:\altera\Projetos\Relogio"
+# couldn't change working directory to "C:lteraProjetosRelogio": no such file or directory
+cd "C:/altera/Projetos/Relogio"
+# reading modelsim.ini
+vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+vlog -reportprogress 300 -work work Relogio.sv divisor_clock.sv contador_segundos.sv contador_minutos.sv contador_horas.sv decoder_7seg.sv Relogio_tb.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Relogio
+# -- Compiling module divisor_clock
+# -- Compiling module contador_segundos
+# -- Compiling module contador_minutos
+# -- Compiling module contador_horas
+# -- Compiling module decoder_7seg
+# -- Compiling module Relogio_tb
+# 
+# Top level modules:
+# 	Relogio_tb
+vsim -voptargs=+acc -do "add wave -position insertpoint sim:/Relogio_tb/*; run -all; wave zoom full" Relogio_tb
+# vsim -do {add wave -position insertpoint sim:/Relogio_tb/*; run -all; wave zoom full} -voptargs=+acc Relogio_tb 
+# Loading sv_std.std
+# Loading work.Relogio_tb
+# Loading work.Relogio
+# Loading work.divisor_clock
+# Loading work.contador_segundos
+# Loading work.decoder_7seg
+# Loading work.contador_minutos
+# Loading work.contador_horas
+# add wave -position insertpoint sim:/Relogio_tb/* 
+#  run -all 
+# Tempo: 0 ns | clk_1hz: x | seg: x x | min: x x | hora: x x | carry_min: x | carry_hora: x
+# Tempo: 10000 ns | clk_1hz: 0 | seg: 0 0 | min: 0 0 | hora: 0 0 | carry_min: 0 | carry_hora: 0
+# Reset liberado em 100000 ns
+# Tempo Simulado: 200000 ns | 00:00:00
+# Simulado 1 segundos
+# Tempo Simulado: 50000200000 ns | 00:00:00
+# Simulado 2 segundos
+# Tempo Simulado: 100000200000 ns | 00:00:00
+# Simulado 3 segundos
+# Tempo Simulado: 150000200000 ns | 00:00:00
+# Break key hit 
+# Break in Module Relogio_tb at Relogio_tb.sv line 32
